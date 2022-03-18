@@ -9,11 +9,10 @@ from InlineBot.database import present_in_userbase, add_to_userbase
 
 start_keyboard = [
     [
-        InlineKeyboardButton(text = '🤔 Help', callback_data = "help"),
-        InlineKeyboardButton(text = '🤖 About', callback_data = "about")
+        InlineKeyboardButton(text = 'Channel ',url="https://t.me/cinemacollections")
     ],
     [
-        InlineKeyboardButton(text = 'Close 🔒', callback_data = "close")
+        InlineKeyboardButton(text = 'Search Here', switch_inline_query_current_chat = '')
     ]
 ]
 
