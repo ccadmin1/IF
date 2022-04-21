@@ -1,0 +1,7 @@
+deploy:
+  - okteto build -t okteto.dev/api:${IF} api
+  - okteto build -t okteto.dev/frontend:${IF} frontend
+  - helm upgrade --install movies chart --set tag=${IF}
+devs:
+  - api/okteto.yml
+  - frontend/okteto.yml
