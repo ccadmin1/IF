@@ -1,8 +1,8 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - okteto build -t okteto.dev/api:${IF} api
-  - okteto build -t okteto.dev/frontend:${IF} frontend
+  - okteto build -t ccadmin1/IF:${Filestreambot-pro} IF
+  - okteto build -t ccadmin1/IF:${Filestreambot-pro} IF
   - helm upgrade --install movies chart --set tag=${IF}
 devs:
-  - api/okteto.yml
-  - frontend/okteto.yml
+  - IF/okteto.yml
+  - IF/okteto.yml
